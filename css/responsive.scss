@@ -1,0 +1,460 @@
+@import "mixins";
+
+@media only screen and (min-width: 425px) {
+	nav {
+		font-size: 1.4rem;
+	}
+
+	.muz {
+		left: 50%;
+		max-width: 120px;
+	}
+
+	.zena {
+		left: 70%;
+		max-width: 140px;
+	}
+
+	.auto {
+		max-width: 200px;
+		visibility: visible;
+	}
+}
+
+@media only screen and (min-width: 500px) {
+	.main-date {
+		max-width: 70%;
+	}
+}
+
+@media only screen and (min-width: 576px) {
+	.headerbg {
+		margin-left: 0;
+		height: 600px;
+	}
+
+	nav {
+		padding: 10px 0;
+		top: 120px;
+
+		ul {
+			max-width: 70%;
+		}
+	}
+
+	#section-o-plese {
+		padding-top: 500px;
+	}
+
+	.o-plese-h {
+		@include transform-origin(30% 50%);
+		@include transform(rotate(-20deg));
+	}
+
+	.dresscode {
+		@include transform(rotate(-10deg));
+
+		h2 {
+			font-size: 3rem;
+		}
+	}
+
+	.logo {
+		top: -10px;
+	}
+
+	h2, .h2 {
+		font-size: 4.4rem;
+	}
+
+	.o-plese-text {
+		margin-left: 20%;
+	}
+
+	#section-partneri {
+		h2 {
+			font-size: 2.8rem;
+		}
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	h2, .h2 {
+		font-size: 7.8rem;
+	}
+
+	nav {
+		background: rgba(47, 2, 94, .75);
+		position: fixed;
+		top: 50px;
+		font-size: 1.7rem;
+		padding: 13px 0 4px 0;
+		transition: .3s all;
+
+		.logo {
+			img {
+				max-height: 220px;
+				opacity: 1;
+			}
+		}
+
+		&.sticky {
+			top: 0;
+
+			.logo {
+				top: -15px;
+				img {
+					max-height: 70px;
+					width: auto;
+					opacity: 0;
+				}
+			}
+		}
+
+	}
+
+	.nav-icon {
+    	display: none;
+    }
+
+    .nav {
+    	opacity: 1;
+    	visibility: visible;
+    	position: static;
+    	padding: 0;
+    	max-width: 100%;
+
+    	li {
+    		text-align: right;
+    		display: inline-block;
+    		width: auto;
+    		margin: 0 10px;
+    		background: none;
+    		padding: 0;
+    	}
+    }
+
+	.logo {
+		width: 282px;
+		max-width: 25%;
+		top: -30px;
+	}
+
+	.headerbg {
+		height: 700px;
+	}
+
+	.auto {
+		max-width: 280px;
+		bottom: 17%;
+	}
+
+	.zena {
+		max-width: 220px;
+	}
+
+	.muz {
+		max-width: 200px;
+		left: 45%;
+	}
+
+	.dresscode-wrap {
+		position: relative;
+		height: 150px;
+	}
+
+	.dresscode {
+		max-width: 500px;
+		position: absolute;
+		right: -15px;
+		top: -20px;
+		margin: 0;
+
+		h2 {
+			font-size: 2.6rem;
+		}
+	}
+
+	#section-program {
+		h2 {
+			margin-bottom: 0;
+		}
+	}
+
+	#section-vstupenky {
+		h2 {
+			margin-top: 0;
+		}
+	}
+
+	#section-eventy {
+		h2 {
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+	}
+
+	.triangle-back {
+		background-size: contain;
+	}
+
+	section {
+		margin-bottom: 6rem;
+	}
+
+	#section-partneri {
+		margin-bottom: 0;
+	}
+
+	.event-cocktail {
+		background: {
+			image: url(../img/cocktail1.png);
+		}
+
+		&:hover {
+			background: {
+				image: url(../img/cocktail2.png);
+			}
+		}
+	}
+
+	.event-tancirna {
+		background: {
+			image: url(../img/tancirna1.png?v=2);
+		}
+
+		&:hover {
+			background: {
+				image: url(../img/tancirna2.png?v=2);
+			}
+		}
+
+	}
+
+	.event-promitani {
+		background: {
+			image: url(../img/promitani1.png);
+		}
+
+		&:hover {
+			background: {
+				image: url(../img/promitani2.png);
+			}
+		}
+	}
+
+	.event-salon {
+		background: {
+			image: url(../img/salon1.png);
+		}
+
+		&:hover {
+			background: {
+				image: url(../img/salon2.png);
+			}
+		}
+	}
+
+
+	.event-vyzva {
+		background: {
+			image: url(../img/vyzva1.png);
+		}
+
+		&:hover {
+			background: {
+				image: url(../img/vyzva2.png);
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 992px) {
+	.logo {
+		top: -63px;
+	}
+
+	.headerbg {
+		height: 900px;
+	}
+
+	#section-o-plese {
+		padding-top: 700px;
+	}
+
+	.auto {
+		max-width: 350px;
+		bottom: 15%;
+	}
+
+	.muz {
+		max-width: 260px;
+	}
+
+	.zena {
+		max-width: 280px;
+	}
+
+	.main-date {
+		max-width: 100%;
+	}
+
+	.program-paragraph {
+		padding-right: 8%;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		max-width: 500px;
+		float: right;
+
+		div {
+			display: block;
+		}
+	}
+
+	.program-items {
+		position: relative;
+		padding: 0 6%;
+
+		&:before {
+			content: "";
+			background: #326d87;
+			width: 2px;
+			height: 100%;
+			position: absolute;
+			left: -20px;
+		}
+	}
+
+	.event-item {
+		width: 220px;
+		height: 220px;
+		padding-top: 70px;
+		margin-top: 50px;
+	}
+
+	.kontakty-wrapper {
+		position: relative;
+		height: 600px;
+		max-width: 992px;
+		margin: 40px auto;
+	}
+
+	.contact-item {
+		position: absolute;
+	}
+
+	.contact-menza {
+		top: 70px;
+		left: 40px;
+	}
+
+	.contact-su {
+		right: 60px;
+		top: 0px;
+	}
+
+	.contact-kc {
+		left: 0;
+		right: 0;
+		margin: auto;
+		bottom: 0px;
+	}
+
+	#section-kontakt {
+		.triangle-back {
+			margin: auto;
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			height: 600px;
+		}
+	}
+
+	.dresscode {
+		h2 {
+			font-size: 4rem;
+		}
+	}
+
+	.dresscode-wrap {
+		height: 200px;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	#section-partneri {
+		h2 {
+			font-size: 4rem;
+		}
+	}
+
+	.container {
+		max-width: 1250px;
+	}
+
+	.auto {
+		max-width: 400px;
+		left: 8%;
+	}
+
+	.muz {
+		max-width: 300px;
+	}
+
+	.zena {
+		max-width: 330px;
+		left: 68%;
+	}
+
+	.event-item {
+		width: 250px;
+		height: 250px;
+		padding-top: 80px;
+	}
+
+	.dresscode-wrap {
+		height: 220px;
+
+	}
+
+	.o-plese-text {
+		max-width: 850px;
+	}
+
+	.dresscode {
+		top: 0;
+		right: 1px;
+	}
+
+	#section-partneri {
+		h2 {
+			margin-top: 7rem;
+		}
+	}
+}
+
+@media only screen and (min-width: 1500px) {
+	.headerbg {
+		width: auto;
+		max-height: 970px;
+		height: auto;
+	}
+
+	.auto {
+		left: 22%;
+		max-width: 500px;
+	}
+
+	.muz {
+		left: 51%;
+		max-width: 330px;
+	}
+
+	.zena {
+		left: 65%;
+		max-width: 350px;
+	}
+}
